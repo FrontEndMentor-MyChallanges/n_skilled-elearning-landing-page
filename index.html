@@ -34,28 +34,39 @@
         </div>
         <header class="header flex flex-col md:flex-row gap-[46px] relative">
           <div
-            class="flex flex-col items-start px-4 pt-[38px] sm:pt-[99px] header-container sm:px-6 md:px-0 md:pl-10 xl:px-0 md:pb-[186px] md:w-[440px]"
+            class="flex flex-col items-start px-4 pt-[38px] sm:pt-[99px] lg:pt-[178px] header-container sm:px-6 md:px-0 md:pl-10 xl:px-0 md:pb-[186px] lg:pb-[210px] md:w-[440px] lg:w-[500px]"
           >
-            <h1 class="header-title text-[40px] font-extrabold leading-[51px] text-left text-customPrimaryDark">
+            <h1
+              class="header-title text-[40px] lg:text-[56px] font-extrabold leading-[51px] text-left text-customPrimaryDark"
+            >
               Maximize skill, minimize budget
             </h1>
 
-            <p class="header-text font-medium leading-[26px] text-customPrimaryLight text-left mt-[26px]">
+            <p
+              class="header-text font-medium leading-[26px] text-customPrimaryLight text-left mt-[26px] lg:text-lg lg:leading-7 lg:mt-[30px]"
+            >
               Our modern courses across a range of in-demand skills will give you the knowledge you need to live the
               life you want.
             </p>
 
             <button
-              class="leading-[26px] font-bold px-[38px] py-[15px] text-white bg-gradient-to-b from-customGradientOrange to-customGradientPink rounded-full mt-6 hover:opacity-50 transition-all"
+              class="leading-[26px] font-bold px-[38px] py-[15px] text-white bg-gradient-to-b from-customGradientOrange to-customGradientPink rounded-full mt-6 hover:opacity-50 transition-all lg:text-lg lg:py-[14px] lg:px-8"
             >
               Get Started
             </button>
           </div>
-          <div class="md:absolute header-img md:right-[-17rem] md:top-[-7rem] md:min-w-[640px] md:h-[640px]">
+          <div
+            class="md:absolute header-img md:right-[-17rem] md:top-[-7rem] md:min-w-[640px] md:h-[640px] lg:right-[-22rem] xl:right-[-33rem] lg:top-[-11rem] xl:top-[-18rem] lg:h-[800px] xl:h-[960px]"
+          >
             <picture class="">
+              <source media="(min-width:1024px)" srcset="./dist/assets/image-hero-desktop@2x.png" />
               <source media="(min-width:768px)" srcset="./dist/assets/images/image-hero-tablet.png" />
               <source media="(min-width:400px)" srcset="./dist/assets/image-hero-mobile@2x.png" />
-              <img src="./dist/assets/image-hero-mobile@2x.png" alt="" class="w-full h-full scale-110 md:scale-105" />
+              <img
+                src="./dist/assets/image-hero-mobile@2x.png"
+                alt=""
+                class="w-full h-full scale-110 md:scale-105 lg:scale-95"
+              />
             </picture>
           </div>
         </header>
