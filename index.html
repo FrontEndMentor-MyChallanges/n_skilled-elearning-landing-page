@@ -21,7 +21,7 @@
 
   <body class="min-h-screen font-jakarta">
     <div class="h-full overflow-hidden wrapper bg-gradient-to-b from-white to-indigo-50">
-      <div class="container max-w-[500px] mx-auto md:max-w-max lg:max-w-[1100px]">
+      <div class="container max-w-[500px] mx-auto sm:max-w-[1100px]">
         <div class="nav flex items-center justify-between px-4 pt-4 md:px-10 md:pt-6 lg:pt-[38px] xl:px-0">
           <div class="img-container">
             <img src="./dist/assets/logo-dark.svg" alt="" class="w-[90px] lg:w-[117px]" />
@@ -34,7 +34,7 @@
         </div>
         <header class="header flex flex-col md:flex-row gap-[46px] relative">
           <div
-            class="flex flex-col items-start px-4 pt-[38px] sm:pt-[99px] header-container md:px-0 md:pl-10 md:pb-[186px] md:w-[440px]"
+            class="flex flex-col items-start px-4 pt-[38px] sm:pt-[99px] header-container sm:px-6 md:px-0 md:pl-10 xl:px-0 md:pb-[186px] md:w-[440px]"
           >
             <h1 class="header-title text-[40px] font-extrabold leading-[51px] text-left text-customPrimaryDark">
               Maximize skill, minimize budget
@@ -60,7 +60,9 @@
           </div>
         </header>
 
-        <div class="px-4 space-y-10 cards">
+        <div
+          class="px-4 xl:px-0 sm:px-6 md:px-10 gap-y-10 cards grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] sm:gap-x-3 sm:gap-y-8 md:gap-y-14 lg:gap-x-[30px] lg:gap-y-20"
+        >
           <div
             class="card rounded-[10px] bg-gradient-to-b from-customGradientOrange to-customGradientPink px-7 pt-6 pb-8"
           >
@@ -109,15 +111,19 @@
           </div>
         </div>
       </div>
-      <footer class="footer h-[120px] w-full flex items-center justify-between px-4 bg-customPrimaryDark mt-20">
-        <div class="img-container logo-light">
-          <img src="./dist/assets/logo-light.svg" alt="" class="w-[90px] lg:w-[117px]" />
+      <footer
+        class="footer h-[120px] w-full flex items-center justify-center px-4 sm:px-6 md:px-10 xl:px-0 bg-customPrimaryDark mt-20"
+      >
+        <div class="md:max-w-[1100px] flex justify-between w-full items-center">
+          <div class="img-container logo-light">
+            <img src="./dist/assets/logo-light.svg" alt="" class="w-[90px] lg:w-[117px]" />
+          </div>
+          <button
+            class="bg-gradient-to-b from-customGradientBlue to-customGradientPink px-6 font-bold leading-7 text-white rounded-full py-[10px] lg:text-lg lg:py-[14px] lg:px-8"
+          >
+            Get Started
+          </button>
         </div>
-        <button
-          class="bg-gradient-to-b from-customGradientBlue to-customGradientPink px-6 font-bold leading-7 text-white rounded-full py-[10px] lg:text-lg lg:py-[14px] lg:px-8"
-        >
-          Get Started
-        </button>
       </footer>
     </div>
   </body>
