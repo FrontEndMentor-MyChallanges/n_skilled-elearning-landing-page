@@ -1271,6 +1271,10 @@ video {
   .lg\:leading-7 {
     line-height: 1.75rem;
   }
+
+  .lg\:leading-\[70px\] {
+    line-height: 70px;
+  }
 }
 
 @media (min-width: 1280px) {
